@@ -23,7 +23,7 @@ btnEl.addEventListener("click", function(){
    
     
     if (Number.isNaN(Number(inputEl.value))){
-        errorMessageEl.textContent = "Pleaser enter a number"
+        errorMessageEl.textContent = "Please enter a number"
        
     } else {
         lengthUnitEl.innerHTML = `${inputEl.value} ${(Number(inputEl.value) > 1 ? "meters" : "meter")} = ${footVal} ${footVal > 1 ? "feet" : "foot"} | ${inputEl.value} ${(Number(inputEl.value) > 1 ? "feet" : "foot" )} = ${meterVal} ${(meterVal > 1 ? "meters" : "meter")}`
